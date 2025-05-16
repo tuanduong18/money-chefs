@@ -9,8 +9,18 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    npm install
    ```
+2. Change APIs
 
-2. Start the app
+   ```bash
+   change the IP address in constants/api.js
+   change the PostgreSQL server in backend/config.py
+   ```
+3. Run flask server as backend
+
+   ```bash
+   python backend/app.py
+   ```
+4. Start the app
 
    ```bash
    npx expo start
