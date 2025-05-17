@@ -1,10 +1,8 @@
-from flask import Flask, jsonify, request, Blueprint
-from flask_cors import CORS
-from flask_sqlalchemy import SQLAlchemy
+from flask import jsonify, request, Blueprint
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
 import psycopg2
-from config import db_config, transactionTypes
+from config import db_config
 
 auth_bp = Blueprint('sign_up', __name__, url_prefix='/auth')
 

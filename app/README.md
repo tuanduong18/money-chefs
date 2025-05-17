@@ -9,18 +9,27 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    npm install
    ```
-2. Change APIs
+2. Run flask server as backend in a separate terminal
 
    ```bash
-   change the IP address in constants/api.js
+   cd backend/app.py
+
+   python -m venv venv
+   source venv/bin/activate
+
+   pip install -r requirements.txt
+
+   python init_db.py
+   python run.py
+   ```
+3. Change APIs
+
+   ```bash
+   change the IP address in constants/api.js to your flask server IP address
+
    change the PostgreSQL server in backend/config.py
    ```
-3. Run flask server as backend
-
-   ```bash
-   python backend/app.py
-   ```
-4. Start the app
+4. In another terminal, start the app
 
    ```bash
    npx expo start

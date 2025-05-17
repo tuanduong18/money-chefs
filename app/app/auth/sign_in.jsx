@@ -3,7 +3,7 @@ import { Text, View, TextInput, Button, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from 'expo-router';
 import { API_BASE } from "@/constants/api";
-import { createStyles } from "./style";
+import createStyles from "./style";
 import { Inter_500Medium, useFonts } from "@expo-google-fonts/inter";
 import { ThemeContext } from "@/context/ThemeContext";
 
