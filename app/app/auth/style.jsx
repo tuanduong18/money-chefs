@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 
-export function createStyles(theme, colorScheme) {
+export default function createStyles(theme, colorScheme) {
     return StyleSheet.create({
         container: {
             flex:1,
